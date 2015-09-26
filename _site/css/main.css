@@ -194,7 +194,7 @@ pre {
 .site-header {
   min-height: 56px;
   height: 100vh;
-  background-image: url("/desk-photo.jpeg");
+  background-image: url("../desk-photo.jpeg");
   background-size: cover;
   overflow: scroll;
   background-repeat: no-repeat;

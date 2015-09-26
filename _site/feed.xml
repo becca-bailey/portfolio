@@ -4,10 +4,10 @@
     <title>Becca Nelson</title>
     <description>Writer, web developer, occasional musician.
 </description>
-    <link>http://beccanelson.github.io/portfolio/</link>
-    <atom:link href="http://beccanelson.github.io/portfolio/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Sep 2015 10:55:24 -0500</pubDate>
-    <lastBuildDate>Sat, 26 Sep 2015 10:55:24 -0500</lastBuildDate>
+    <link>http://beccanelson.github.io/portfolio/portfolio//</link>
+    <atom:link href="http://beccanelson.github.io/portfolio/portfolio//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 26 Sep 2015 11:16:20 -0500</pubDate>
+    <lastBuildDate>Sat, 26 Sep 2015 11:16:20 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -92,8 +92,8 @@
 &lt;p&gt;What about you?  What’s your favorite CSS trick you have learned so far?&lt;/p&gt;
 </description>
         <pubDate>Fri, 18 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://beccanelson.github.io/portfolio/css-is-awesome</link>
-        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/css-is-awesome</guid>
+        <link>http://beccanelson.github.io/portfolio/portfolio//css-is-awesome</link>
+        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/portfolio//css-is-awesome</guid>
         
         
         <category>dev-bootcamp</category>
@@ -141,8 +141,8 @@ Pushes you local repository to a branch on GitHub.  For example, to push to the 
 &lt;p&gt;&lt;a href=&quot;https://help.github.com/categories/bootcamp/&quot;&gt;GitHub Bootcamp&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://beccanelson.github.io/portfolio/gitting-it-together</link>
-        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/gitting-it-together</guid>
+        <link>http://beccanelson.github.io/portfolio/portfolio//gitting-it-together</link>
+        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/portfolio//gitting-it-together</guid>
         
         
         <category>dev-bootcamp</category>
@@ -166,8 +166,8 @@ Pushes you local repository to a branch on GitHub.  For example, to push to the 
 &lt;p&gt;So, feedback is good.  And feedback is hard.  Feedback is inviting someone else to speak truth to you that perhaps you didn’t want to hear.  But perhaps at the end of it all, we will all be a little bit better for it.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://beccanelson.github.io/portfolio/this-is-crazy</link>
-        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/this-is-crazy</guid>
+        <link>http://beccanelson.github.io/portfolio/portfolio//this-is-crazy</link>
+        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/portfolio//this-is-crazy</guid>
         
         
         <category>dev-bootcamp</category>
