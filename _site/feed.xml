@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Becca Nelson</title>
+    <description>Writer, web developer, occasional musician.
+</description>
+    <link>http://beccanelson.github.io/portfolio/</link>
+    <atom:link href="http://beccanelson.github.io/portfolio/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 26 Sep 2015 10:55:24 -0500</pubDate>
+    <lastBuildDate>Sat, 26 Sep 2015 10:55:24 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>CSS is Awesome</title>
+        <description>&lt;p&gt;As we are diving into CSS next week in Dev Bootcamp, I wanted to share some of my favorite CSS tricks.&lt;/p&gt;
+
+&lt;h2 id=&quot;flexbox&quot;&gt;Flexbox&lt;/h2&gt;
+
+&lt;p&gt;Flexbox is a trick that does exactly what it says—makes flexible boxes.  I especially like using it for navigation menus to space items out evenly.  Also, using flexbox to display content helps to make your site more mobile responsive.  As a special added bonus, flexbox is completely compatible in all browers, prefix-free.&lt;/p&gt;
+
+&lt;p&gt;You can use flexbox by adding a few lines of CSS to the container element.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;justify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;around&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;zvqyPJ&quot; data-default-tab=&quot;result&quot; data-user=&quot;beccaliz&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/beccaliz/pen/zvqyPJ/&quot;&gt;Flexbox Navigation&lt;/a&gt; by Becca Nelson (&lt;a href=&quot;http://codepen.io/beccaliz&quot;&gt;@beccaliz&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;For more info: &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;A Complete Guide to Flexbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;clipping-a-background-image-around-text&quot;&gt;Clipping a background image around text&lt;/h2&gt;
+
+&lt;p&gt;This one is a little trickier, as it is not supported in all browsers and involves some workarounds to show up in Firefox and Internet explorer.  The effect, however, is pretty awesome when it works.  Why use photoshop when you can use CSS?  Also, note the hover effect in my example.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;path/to/image&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;clip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;ss&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;dYMQQq&quot; data-default-tab=&quot;result&quot; data-user=&quot;beccaliz&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/beccaliz/pen/dYMQQq/&quot;&gt;dYMQQq&lt;/a&gt; by Becca Nelson (&lt;a href=&quot;http://codepen.io/beccaliz&quot;&gt;@beccaliz&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;For more info: &lt;a href=&quot;http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html&quot;&gt;Using Background Clip for Text with CSS Fallback&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sass&quot;&gt;Sass&lt;/h2&gt;
+
+&lt;p&gt;I guess Sass isn’t a CSS trick as much as it’s a method of writing CSS.  Sass adds nesting, variables, and conditional logic to CSS, and to me, it just makes sense!&lt;/p&gt;
+
+&lt;p&gt;For example, Sass allows you to nest your code instead of writing long strings of identifiers.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Helvetica&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also use variables to replace values.  This way, if you want to change the style of the entire document, you can change the variable instead of searching for each instance of a particular style.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vg&quot;&gt;$text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#D63B71;&lt;/span&gt;
+&lt;span class=&quot;vg&quot;&gt;$heading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Lato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$heading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I obviously can’t give you a full tutorial here, but I would recommend checking out some of these resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://teamtreehouse.com/library/sass-basics&quot;&gt;Sass Basics course at Treehouse&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;stuff-im-still-learning-about&quot;&gt;Stuff I’m still learning about&lt;/h2&gt;
+
+&lt;p&gt;I took a class on SVGs this week, which I think is completely fascinating, especially when combined with CSS3 animation.  I’m currently reading through &lt;a href=&quot;http://svgpocketguide.com/&quot;&gt;Pocket Guide to Writing SVG&lt;/a&gt;, and learning more about &lt;a href=&quot;https://css-tricks.com/snippets/css/keyframe-animation-syntax/&quot;&gt;keyframes animation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What about you?  What’s your favorite CSS trick you have learned so far?&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://beccanelson.github.io/portfolio/css-is-awesome</link>
+        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/css-is-awesome</guid>
+        
+        
+        <category>dev-bootcamp</category>
+        
+        <category>git</category>
+        
+      </item>
+    
+      <item>
+        <title>Gitting it Together</title>
+        <description>&lt;p&gt;When I first started to explore web development, I remember searching for templates and code samples, which inevitably led me to GitHub.  I had this idea that only “real” developers used GitHub, and it was this wonderful universe for the highly intelligent super-humans who know how to use it.  Now that I have discovered version control, I still think about it that way, except I now count myself among the highly intelligent super-humans who know how to use it.&lt;/p&gt;
+
+&lt;p&gt;So, apart from making you look like a “real” developer, version control just makes sense.  It’s like a time machine that allows you to track changes and store all the earlier versions of your files. It also helps to resolve arguments on a team, as you don’t have to worry about overwriting anyone else’s code or sending multiple copies of a file back and forth.  Seeing everyone’s changes in one place makes your life &lt;em&gt;much easier&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Git is the most common program for version control.  Git allows you store your changes in “commits”, or snapshots of your files as they exist right now.  This can be a code, text, or even an image file.  You can keep these commits to yourself on your own computer, or you can show off your stuff by pushing these commits to GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Very Important Note:&lt;/strong&gt; Git is NOT the same thing as GitHub.  Git is a program you can use on your own computer without ever posting anything on GitHub.  Pushing to GitHub is optional, though like I said, it makes you look like a highly intelligent super-human.&lt;/p&gt;
+
+&lt;p&gt;GitHub is a community.  As we write code and become better developers, we’re not doing it alone—we’re sharing the experience with others, too.  And that, to me, is the best part.&lt;/p&gt;
+
+&lt;h2 id=&quot;helpful-commands&quot;&gt;Helpful Commands&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;
+Initializes a git repository in a folder.  Pro Tip: To delete a git repository, delete the hidden folder called .git.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;
+Checks the status of your repository and lists untracked or changed files.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git add [file name]&lt;/code&gt;
+Adds files to the staging area.  You can specify individual files, or add all files by using
+&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git commit -m &quot;commit message&quot;&lt;/code&gt;
+Commits all tracked files and changes to the repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote add [repository url]&lt;/code&gt;
+Connects your local repo to your repo on GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git push origin [branch name]&lt;/code&gt;
+Pushes you local repository to a branch on GitHub.  For example, to push to the master branch, you would enter &lt;code&gt;git push origin master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;for-more-information&quot;&gt;For more information:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://learntocodewith.me/tutorials/github-pages/&quot;&gt;How to Get Your Site Online for Free with GitHub Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/categories/bootcamp/&quot;&gt;GitHub Bootcamp&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://beccanelson.github.io/portfolio/gitting-it-together</link>
+        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/gitting-it-together</guid>
+        
+        
+        <category>dev-bootcamp</category>
+        
+        <category>git</category>
+        
+      </item>
+    
+      <item>
+        <title>Reflections on Dev Bootcamp: Feedback</title>
+        <description>&lt;h2 id=&quot;this-is-crazy&quot;&gt;This is crazy.&lt;/h2&gt;
+
+&lt;p&gt;It seems that Phase 0 is upon me, and its inevitable presence in my schedule is causing a bit of a disruption in my &lt;em&gt;wasting my life on twitter&lt;/em&gt; time.  However, I think it might be worth it.&lt;/p&gt;
+
+&lt;p&gt;I can tell already that this experience will be a bit of a growing experience for me.  Not only will I have to improve my time management, but I will also need to give and receive lots of feedback.  SO MUCH FEEDBACK.  We have to give and receive feedback on each pairing session, and also give feedback on each piece of feedback to rate whether it is Actionable, Specific, and Kind.&lt;/p&gt;
+
+&lt;p&gt;I don’t know about you, but I’ve always been a little afraid of feedback.  I’m usually pretty content to mind my own business, and assume that I’m doing okay.  To invite feedback is to invite the possibility that I might be less “okay” than I thought.  &lt;em&gt;Perhaps I’m not good at this.  Perhaps I’m better off working alone.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As a teacher, I usually received feedback something like once a year.  Administrators occasionally popped into my classroom, but were usually too busy to give me any sort of formalized feedback other than the once-a-year staff review.  Thinking back to those days, my major frustration was the lack of communication.  It happend more than once that I was criticized for something at the end of the year that I could have fixed months before if I had only known about it.&lt;/p&gt;
+
+&lt;p&gt;So, feedback is good.  And feedback is hard.  Feedback is inviting someone else to speak truth to you that perhaps you didn’t want to hear.  But perhaps at the end of it all, we will all be a little bit better for it.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://beccanelson.github.io/portfolio/this-is-crazy</link>
+        <guid isPermaLink="true">http://beccanelson.github.io/portfolio/this-is-crazy</guid>
+        
+        
+        <category>dev-bootcamp</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
