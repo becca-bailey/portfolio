@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Diversity in Tech"
-description: "Minorities, "brogrammer culture", and what we can do about it.
+description: "Minorities, 'brogrammer culture', and what we can do about it."
 date:   2015-10-02
 categories: dev-bootcamp issues tech
 ---
